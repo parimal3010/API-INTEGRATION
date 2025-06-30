@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Weather in your city</title>
+  <style>
+    body {
+      font-family: Arial;
+      text-align: center;
+      padding: 20px;
+/* background-image: url("pexels-joshsorenson-1154510.jpg"); */
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      background-attachment: fixed;
+    }
+
+    input[type="text"] {
+      padding: 10px;
+      width: 500px;
+      border-radius: 8px;
+      border: 1px solid #1d2331;
+      font-size: 25px;
+      margin-bottom: 10px;
+     
+    }
+    .grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px 30px;
+  text-align: left;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+#bgVideo {
+  position: fixed;
+  
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  min-height: 100%;
+  object-fit: cover;
+  z-index: -1; /* puts the video behind content */
+}
+
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      margin-left: 20px;
+      font-size: 20px;
+      border-radius: 8px;
+      border: none;
+      background-color: #1d2331;
+      color: white;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #000000;
+    }
+
+    .card {
+      display: none;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+     
+      
+      background-color: rgba(255, 255, 255, 0.85);
+      margin-top: 20px;
+    }
+  </style>
+</head>
+<body>
+  <video autoplay muted loop playsinline id="bgVideo">
+  <source src="rain.mp4" type="video/mp4" />
+
+</video>
+  <h1 style="margin-top: 180px; font-size: 85px;">Weather in Your City</h1>
+
+  <input type="text" id="cityInput" placeholder="Enter city name" />
+  
+  <button onclick="getWeather()">Get Weather</button><br>
+  <div class="card" id="weatherResult"></div>
+
+  <script src="java_scr.js"></script>
+</body>
+</html>
