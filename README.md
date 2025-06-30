@@ -20,3 +20,7 @@ Key features include:
 Live Weather Data
 Sunrise & Sunset Times
 *
+
+##OUTPUT
+
+![Image](https://github.com/user-attachments/assets/a2628e7b-2ec2-4427-84a3-12606c08587a)
