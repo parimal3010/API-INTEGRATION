@@ -21,6 +21,8 @@ Live Weather Data
 Sunrise & Sunset Times
 *
 
-##OUTPUT
+#OUTPUT
 
 ![Image](https://github.com/user-attachments/assets/a2628e7b-2ec2-4427-84a3-12606c08587a)
+
+![Image](https://github.com/user-attachments/assets/7be30596-f3e3-4fe6-8dad-e34179485229)
